@@ -19,4 +19,7 @@ E-->|pridobi albume|C;
 F-->|pridobi slike|B;
 F-->|pridobi lastnika kolaža|A
 
+Github zaenkat še ne podpira mermaid markupa tako da je spodej slika.
+
 ```
+![Klici med mikrostoritvami](mermaid-diagram-20181210181410.svg)
