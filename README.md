@@ -1,3 +1,5 @@
+#### Uporaba zunanjega API-ja za generiranje slik v tekst:
+http://textart.io/api/img2txt
 ```mermaid
 graph LR;
 A[UserService];
@@ -5,7 +7,7 @@ B[PhotoSerivce];
 C[AlbumSerivce];
 D[CommentService];
 E[ShareService];
-F[CollageService];
+F[ImageToTextService];
 A-->|pridobi slike uporabnika|B;
 A-->|pridobi albume uporabnika|C;
 A-->|pridobi komentarje uporabnika|D;
@@ -17,9 +19,10 @@ E-->|pridobi slike|B;
 A-->|pridobi deljene albume|C;
 E-->|pridobi albume|C;
 F-->|pridobi slike|B;
-F-->|pridobi lastnika kolaža|A
+F-->|pridobi lastnika slike|A
+A-->|pridobi textovne slike za uporabnika|F
 
 Github zaenkat še ne podpira mermaid markupa tako da je spodej slika.
 
 ```
-![Klici med mikrostoritvami](mermaid-diagram-20181210181410.svg)
+![Klici med mikrostoritvami](mermaid-diagram-20181211150816.svg)
